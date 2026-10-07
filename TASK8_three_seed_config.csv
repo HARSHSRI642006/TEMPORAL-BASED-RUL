@@ -1,0 +1,15 @@
+Parameter,Value
+seeds,"[42, 123, 2024]"
+sequence_length,20
+input_features,105
+hidden_size,64
+num_layers,2
+dropout,0.2
+batch_size,128
+learning_rate,0.001
+weight_decay,1e-05
+max_epochs,50
+early_stopping_patience,5
+loss_function,MSELoss
+optimizer,Adam
+gradient_clip_norm,1.0

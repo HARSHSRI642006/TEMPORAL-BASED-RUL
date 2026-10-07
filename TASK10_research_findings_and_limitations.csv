@@ -1,0 +1,10 @@
+Finding,Observation
+Random Forest vs LSTM,Random Forest performs better than the 20-step LSTM on the same controlled split.
+RF MAE advantage,RF reduces MAE by 3.42 RUL time steps compared with LSTM.
+RF RMSE advantage,RF reduces RMSE by 7.10 RUL time steps compared with LSTM.
+RF R2 advantage,RF R2 is higher by 0.178 compared with LSTM.
+LSTM convergence,Training loss decreases continuously while validation loss stops improving after approximately 1–2 epochs.
+Possible reason 1,"The current sensor observation may already contain strong predictive information, so temporal history may add limited useful information."
+Possible reason 2,Random Forest is well suited to nonlinear relationships and feature interactions in structured tabular sensor data.
+Possible reason 3,The current LSTM configuration may not generalize well; the large train-validation gap indicates overfitting or model-data mismatch.
+Censoring limitation,Only vehicles with observed repair events provide exact RUL labels; censored vehicles cannot be assigned exact RUL without additional assumptions.

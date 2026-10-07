@@ -1,0 +1,6 @@
+Parameter,Value
+model,LSTM
+seed,42
+sequence_length,20
+input_features,105
+rul_bins,"0-50, 50-100, 100-200, 200-300, >300"
